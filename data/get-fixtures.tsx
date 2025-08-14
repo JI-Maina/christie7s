@@ -34,7 +34,7 @@ export const fetchTournamentSeries = async () => {
 };
 
 // fetch season fixtures
-export const fetchSeasonFixtures = async (id: number) => {
+export const fetchSeasonFixtures = async (id: number): Promise<Fixture[]> => {
   const res = await fetch(`${baseURL}?gettoken=${token}`, {
     method: "POST",
     headers: {

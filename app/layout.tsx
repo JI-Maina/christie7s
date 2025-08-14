@@ -15,8 +15,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Kampala 7s",
-  description: "Follow all Kampala 7s scores updates",
+  title: "Christie 7s",
+  description: "Follow all Christie 7s scores updates",
 };
 
 export default function RootLayout({
