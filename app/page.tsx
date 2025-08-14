@@ -7,15 +7,15 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 
 export default async function Home() {
   const [data, scorers] = await Promise.all([
-    fetchSeasonFixtures(104),
-    fetchSeasonScorers(104),
+    fetchSeasonFixtures(111),
+    fetchSeasonScorers(111),
   ]);
 
   const groupData = groupFixtures(
-    data.filter((fixture) => fixture.game_date === "2025-08-02")
+    data.filter((fixture) => fixture.game_date === "2025-08-16")
   );
   const knockoutData = groupFixtures(
-    data.filter((fixture) => fixture.game_date === "2025-08-03")
+    data.filter((fixture) => fixture.game_date === "2025-08-17")
   );
 
   console.log(data);
